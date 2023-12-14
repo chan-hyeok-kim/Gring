@@ -139,12 +139,6 @@
 	    <artifactId>tiles-api</artifactId>
 	    <version>3.0.8</version>
 	</dependency>
-	
-	<!--Web Client-->
-	<dependency>
-	    <groupId>org.springframework.boot</groupId>
-	    <artifactId>spring-boot-starter-webflux</artifactId>
-	</dependency>
 		
 		
 	</dependencies>

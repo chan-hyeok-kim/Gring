@@ -5,7 +5,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
- 
 </head>
 <body>
 <!-- sample main -->
@@ -144,10 +143,5 @@
         </div>
       </div>
     </div>
-    
-    <!-- jQuery 스크립트 -->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-    <script src="/js/main/main.js"></script>
 </body>
 </html>

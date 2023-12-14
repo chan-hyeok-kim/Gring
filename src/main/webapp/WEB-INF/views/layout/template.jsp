@@ -19,9 +19,6 @@
   <link rel="stylesheet" href="/css/swiper.css">
   <link rel="stylesheet" href="/css/aos.css">
   <link rel="stylesheet" href="/css/style.css">
-  
-  
-
 </head>
 <body>
 <!-- site-wrap start-->
@@ -47,7 +44,7 @@
     
     
     <!-- script -->
-   <script src="/js/jquery-3.3.1.min.js"></script>
+  <script src="/js/jquery-3.3.1.min.js"></script>
   <script src="/js/jquery-migrate-3.0.1.min.js"></script>
   <script src="/js/jquery-ui.js"></script>
   <script src="/js/popper.min.js"></script>
