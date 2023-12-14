@@ -20,8 +20,7 @@
 	</definition> 
 
 	<!-- 김동섭 -->
-	<definition name="login" template="/WEB-INF/views/login.jsp">
-   </definition>
+	
   
 
   <!-- 김찬혁 -->
