@@ -16,5 +16,6 @@ public class ImageVO extends CommonsVO {
 	private String imagePath;
 	private String imageName;
 	private String imageOriginalName;
+	
 
 }

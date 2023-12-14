@@ -1,4 +1,7 @@
 
+/* 이미지 검색
+*/
+ 
 hitsArray=new Array();
 
 $.ajax({
@@ -14,4 +17,3 @@ $.ajax({
      
     }
 })
-

@@ -15,4 +15,5 @@ public class CommonsVO {
 	private Date regDate;
 	private String modId;
 	private Date modDate;
+	
 }
