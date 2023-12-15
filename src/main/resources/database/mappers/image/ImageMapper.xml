@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.cha.ing.image.imageDAO">
+ 
+	 <insert id="setAdd" parameterType="ImageVO">
+		INSERT INTO IMAGE 
+		(IMAGE_NO, ID, IMAGE_PATH, IMAGE_NAME, IMAGE_ORIGINAL_NAME, REG_ID,REG_DATE,MOD_ID,MOD_DATE)
+		VALUES
+		(#{imageNo},#{id},#{imagePath},#{imageName},#{imageOriginalName},#{id},NOW(),#{id},NOW())
+	 </insert>
+
+
+
+
+ 
+ 
+ <!-- update
+ 
+ UPDATE 
+    SET
+		,MOD_ID=#{id},MOD_DATE=NOW()
+		WHERE 
+ 
+  -->
+  
+  <!-- resultMap
+        <result column="REG_ID" property="regId"/>
+		<result column="REG_DATE" property="regDate"/>
+		<result column="MOD_ID" property="modId"/>
+		<result column="MOD_DATE" property="modDate"/>
+	
+   -->
+</mapper>
