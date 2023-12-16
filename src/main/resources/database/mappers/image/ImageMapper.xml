@@ -4,9 +4,9 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
-<mapper namespace="com.cha.ing.image.imageDAO">
+<mapper namespace="com.cha.ing.image.ImageDAO">
  
-	 <insert id="setAdd" parameterType="ImageVO">
+	 <insert id="insertImage" parameterType="ImageVO">
 		INSERT INTO IMAGE 
 		(IMAGE_NO, ID, IMAGE_PATH, IMAGE_NAME, IMAGE_ORIGINAL_NAME, REG_ID,REG_DATE,MOD_ID,MOD_DATE)
 		VALUES

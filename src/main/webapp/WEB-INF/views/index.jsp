@@ -23,7 +23,7 @@
           </div>
 
 <script type="text/javascript">
-console.log('${images.hits}');
+console.log('${images[0].hits}');
 </script>
 
         </div>

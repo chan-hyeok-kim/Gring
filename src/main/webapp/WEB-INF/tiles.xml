@@ -29,4 +29,9 @@
 	  <put-attribute name="body" value="/WEB-INF/views/sample/test.jsp"/>
 	</definition>
 	
+	 <definition name="image/upload" extends="layout">
+	  <put-attribute name="body" value="/WEB-INF/views/image/upload.jsp"/>
+	</definition>
+	
+	
 </tiles-definitions>

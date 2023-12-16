@@ -1,6 +1,7 @@
 package com.cha.ing.main;
 
 import java.util.LinkedHashMap;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -32,13 +33,12 @@ public class MainController {
 			         
 			log.warn("픽사이미지오나{}",response);
 			
-			ObjectMapper objectMapper=new ObjectMapper();
-			String json=objectMapper.writeValueAsString(response);
-			LinkedHashMap<String, Object> obj=objectMapper.readValue(json, LinkedHashMap.class);
+		
+			List<Object> list=response.collectList().block();
 			
-			log.warn("픽사이미지파싱{}",obj);
+			log.warn("픽사이미지리스트{}",list);
 			
-			model.addAttribute("images",response);
+			model.addAttribute("images",list);
 			
 		
 		return "index";
