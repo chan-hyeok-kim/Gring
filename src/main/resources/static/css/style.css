@@ -73,13 +73,13 @@ a {
 
 .form-control {
   height: 43px;
-  border-radius: 0;
-  background: transparent;
+  border-radius: 10;
+  
   border-color: #777;
-  color: #fff !important; }
+   }
   .form-control:active, .form-control:focus {
     border-color: #20c997;
-    background: transparent; }
+     }
   .form-control:hover, .form-control:active, .form-control:focus {
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }

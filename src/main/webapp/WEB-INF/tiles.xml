@@ -20,18 +20,20 @@
 	</definition> 
 
 	<!-- 김동섭 -->
-	<definition name="login" template="/WEB-INF/views/login.jsp">
-   </definition>
+	<!-- <definition name="login" template="/WEB-INF/views/login.jsp">
+   </definition> -->
   
 
   <!-- 김찬혁 -->
+   <definition name="image/upload" extends="layout">
+	  <put-attribute name="body" value="/WEB-INF/views/image/upload.jsp"/>
+	</definition>
+	
+	
   <definition name="sample/list" extends="layout">
 	  <put-attribute name="body" value="/WEB-INF/views/sample/test.jsp"/>
 	</definition>
 	
-	 <definition name="image/upload" extends="layout">
-	  <put-attribute name="body" value="/WEB-INF/views/image/upload.jsp"/>
-	</definition>
 	
 	
 </tiles-definitions>

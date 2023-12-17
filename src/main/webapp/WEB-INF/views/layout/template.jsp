@@ -36,9 +36,10 @@
     <!-- header -->
     <tiles:insertAttribute name="header"/>
     
+    <div>
     <!-- contents -->
     <tiles:insertAttribute name="body"/>
-    
+    </div>
     <!-- site-wrap end-->
     </div>
     

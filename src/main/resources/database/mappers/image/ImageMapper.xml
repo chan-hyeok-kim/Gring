@@ -10,7 +10,7 @@
 		INSERT INTO IMAGE 
 		(IMAGE_NO, ID, IMAGE_PATH, IMAGE_NAME, IMAGE_ORIGINAL_NAME, REG_ID,REG_DATE,MOD_ID,MOD_DATE)
 		VALUES
-		(#{imageNo},#{id},#{imagePath},#{imageName},#{imageOriginalName},#{id},NOW(),#{id},NOW())
+		(IMAGE_SEQ.NEXTVAL,#{id},#{imagePath},#{imageName},#{imageOriginalName},#{id},SYSDATE,#{id},SYSDATE)
 	 </insert>
 
 

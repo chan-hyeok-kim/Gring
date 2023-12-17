@@ -10,7 +10,7 @@
 INSERT INTO 
 (REG_ID,REG_DATE,MOD_ID,MOD_DATE)
 VALUES
-(  ,#{id},NOW(),#{id},NOW())
+(  ,#{id},SYSDATE,#{id},SYSDATE)
 
  -->
  
@@ -19,7 +19,7 @@ VALUES
  
  UPDATE 
     SET
-		,MOD_ID=#{id},MOD_DATE=NOW()
+		,MOD_ID=#{id},MOD_DATE=SYSDATE
 		WHERE 
  
   -->
