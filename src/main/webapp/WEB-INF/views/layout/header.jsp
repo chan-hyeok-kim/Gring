@@ -35,8 +35,10 @@
                   </ul>
                 </li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/image/create">이미지 생성하기</a></li>
+                <li><a href="/image/upload" class="pl-0 pr-5">
+                  <img alt="" src="/images/icon/free-icon-upload-file-11222805.png">만들기</a>
+                  </li>
               </ul>
             </nav>
           </div>
@@ -44,10 +46,7 @@
           <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
             <div class="d-none d-xl-inline-block">
               <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
-                <li>
-                  <a href="/image/upload" class="pl-0 pr-5">
-                  <img alt="" src="/images/icon/free-icon-upload-file-11222805.png"></a>
-                </li>
+               
                 <li>
                   <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
                 </li>

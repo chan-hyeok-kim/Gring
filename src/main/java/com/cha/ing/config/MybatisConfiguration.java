@@ -16,7 +16,7 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
                          ,sqlSessionFactoryRef="sqlSessionFactory"
                          ,sqlSessionTemplateRef="sqlSessionTemplate")
 
-public class MybatisConfig {
+public class MybatisConfiguration {
 
 	@Bean
 	public SqlSessionFactory sqlSessionFactory(@Qualifier("dataSource") DataSource dataSource) throws Exception {

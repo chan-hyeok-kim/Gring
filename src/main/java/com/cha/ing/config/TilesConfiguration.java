@@ -10,7 +10,7 @@ import org.springframework.web.servlet.view.tiles3.TilesView;
 import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
 
 @Configuration
-public class TilesConfig  implements WebMvcConfigurer {
+public class TilesConfiguration  implements WebMvcConfigurer {
 
 		@Bean
 		public TilesConfigurer tilesConfigurer() {

@@ -3,9 +3,12 @@ package com.cha.ing.commons;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.UUID;
 
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,8 +26,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 @Component
-@RequiredArgsConstructor
 @Slf4j
+@RequiredArgsConstructor
 public class FileManage {
 
 	private final AmazonS3Client amazonS3Client;
@@ -45,9 +48,13 @@ public class FileManage {
 	         if(fileName == null || fileName.isEmpty()) {
 	        	 return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Invalid file name");
 	         }
+				
+				  SimpleDateFormat sdf = new SimpleDateFormat("yyyy_MM_dd"); 
+				  String today = sdf.format(new Date());
+				 
 			 metadata.setContentType(file.getContentType());
 			 metadata.setContentLength(file.getSize());
-	         amazonS3Client.putObject(bucket,fileName,file.getInputStream(),metadata);
+	         amazonS3Client.putObject(bucket,fileUrl+"/"+today,file.getInputStream(),metadata);
 	         
 	         return ResponseEntity.ok(fileName);
 	      } catch (IOException e) {
