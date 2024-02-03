@@ -62,7 +62,7 @@ public class ImageController {
 		 
 	    Mono<Object> imageInfo=webClient.post()
 		                    .uri("")
-		                    .header(prompt, "ad31c6a5aaaa8e58d6a71df13e7a8cbd")
+		                    .header(prompt, "")
 		                    .contentType(MediaType.APPLICATION_JSON)
 		                    .body(BodyInserters.fromValue(param))
 		                    .retrieve()
